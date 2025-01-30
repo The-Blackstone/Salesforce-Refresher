@@ -1,8 +1,8 @@
 {
-    "name": "Telarus SF Auto Updater",
+    "name": "SF Auto Updater",
     "version": "1.4.2",
     "manifest_version": 3,
-    "description": "An extension for Telarus employees to automatically refresh any List or Dashboard view in SalesForce.",
+    "description": "An extension to automatically refresh any List or Dashboard view in SalesForce.",
     "icons": {
         "128": "icons/LoadingCloud128x128.png"
     }, 
@@ -14,7 +14,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://telarus.lightning.force.com/lightning/*"],
+            "matches": ["*.lightning.force.com/lightning/*"],
             "js": ["lib/jquery.min.js","content-scripts/content.js"]
         }
     ]
