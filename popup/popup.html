@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            width: 500px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <h3>Welcome to the Salesforce Auto Updater Settings</h2>
+    <!-- <form> -->
+        <h4>I would like Dashboards to refresh every
+            <select name="Dashboards" id="Dash">
+                <option value=”DN”>Never</option>
+                <option value=”D5”>5 Minutes</option>
+                <option value=”D10”>10 Minutes</option>
+                <option value=”D15”>15 Minutes</option>
+                <option value=”D20”>20 Minutes</option>
+                <option value=”D60”>1 Hour</option>
+            </select>
+        </h4>
+        <h4>I would like List Views to refresh every
+            <select name="ListViews" id="List">
+                <option value=”LN”>Never</option>
+                <option value=”L5”>5 Minutes</option>
+                <option value=”L10”>10 Minutes</option>
+                <option value=”L15”>15 Minutes</option>
+                <option value=”L20”>20 Minutes</option>
+                <option value=”L60”>1 Hour</option>
+            </select>
+        </h4>
+
+        <h4>Please reload your Salesforce page in order for any changes to take effect</h4>
+
+    <div class="Logo">
+        <img src="Telarus-Logo-01.svg" width="250">
+    <div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
